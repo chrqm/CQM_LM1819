@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="gestiondatos.jsp" method="GET">
+        <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="text" value="" name="nombre" id="nombre" size="40" maxlength="30">
+                <br><br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" value="" name="correo" id="correo" size="40">
+                <br><br>
+                <label for="url">URL:</label>
+                <input type="url" value="" name="url" id="url" placeholder="Escribe la URL de tu página" size="40">
+                <br><br>
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+                <br><br>
+                <label for="tiempo">Tiempo:</label>
+                <input type="time" name="tiempo" id="tiempo">
+                <br><br>
+                <label for="fechahora">Fecha y hora:</label>
+                <input type="datetime-local" name="fechahora" id="fechahora">
+                <br><br>
+                <label for="mes">Mes:</label>
+                <input type="month" name="mes" id="mes">
+                <br><br>
+                <label for="semana">Semana:</label>
+                <input type="week" name="semana" id="semana">
+                <br><br>
+                <label for="numero">Número (min -10, max 10):</label>
+                <input type="number" min="-10" max="10">
+                <br><br>
+                <label for="tlf">Teléfono:</label>
+                <input type="tel" name="tlf" id="tlf">
+                <br><br>
+                <label for="termino">Término de búsqueda:</label>
+                <input type="search" name="termino" id="termino">
+                <br><br>
+                <label for="color">Color favorito:</label>
+                <input type="color" name="color" id="color">
+                <br><br>
+                <input type="submit" value="Enviar">
+
+</body>
+</html>
