@@ -7,44 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <form action="gestiondatos.jsp" method="GET">
-        <input type="number" min="1" max="10" required="required">
-        <br><br>
-        <input type="email">
-        <br><br>
-        <input type="url">
-        <br><br>
-        <input type="submit">
-        <br><br>
-        <input type="date">
-        <br><br>
-        <input type="time">
-        <br><br>
-        <input type="month">
-        <br><br>
-        <input type="datetime-local">
-        <br><br>
-        <input type="search">
-        <br><br>
-        <input type="tel">
-        <br><br>
-        <input type="range" min="1" max="100" step="25">
-        <br><br>
-        <input type="color">
-        <br><br>
-        <input list="browsers">
-            <datalist id="browsers">
-                <option value="Sevilla"></option>
-                <option value="Cádiz"></option>
-                <option value="Granada"></option>
-                <option value="Córdoba"></option>
-                <option value="Huelva"></option>
-                <option value="Jaén"></option>
-                <option value="Almería"></option>
-                <option value="Málaga"></option>
-            </datalist>
-        <br><br>
-        <input type="text" autofocus placeholder="Escriba un texto" required autocomplete="">
-    </form>
+    <table>
+        <form action="gestiondatos.jsp" method="GET">
+            <tr>
+                <td>Elige un número:</td><td><input type="number" min="1" max="10" required="required"></td>
+            </tr>
+            <tr>
+                <td>Email:</td><td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>URL:</td><td><input type="url"></td>
+            </tr>
+            <tr>
+                <td>Fecha:</td><td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Hora:</td><td><input type="time"></td>
+            </tr>
+            <tr>
+                <td>Mes:</td><td><input type="month"></td>
+            </tr>
+            <tr>
+                <td>Fecha y hora local:</td><td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td>Buscar:</td><td><input type="search"></td>
+            </tr>
+            <tr>
+                <td>Teléfono:</td><td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td>Rango:</td><td><input type="range" min="1" max="100" step="10"></td>
+            </tr>
+            <tr>
+                <td>Color:</td><td><input type="color"></td>
+            </tr>
+            <tr>
+                <td>Provincia:</td>
+                <td><input list="provincias">
+                    <datalist id="provincias">
+                        <option value="Sevilla"></option>
+                        <option value="Cádiz"></option>
+                        <option value="Granada"></option>
+                        <option value="Córdoba"></option>
+                        <option value="Huelva"></option>
+                        <option value="Jaén"></option>
+                        <option value="Almería"></option>
+                        <option value="Málaga"></option>
+                    </datalist></td>
+            </tr>
+            <tr>
+                <td>Texto:</td><td><input type="text" autofocus placeholder="¿Qué es lo que más te gusta de la ciudad que has elegido?" required autocomplete=""></td>
+            </tr>
+            <tr>
+                <td>Archivo:</td><td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>Contraseña:</td><td><input type="password" pattern="[A-Za-z0-9!?-]{8,12}"></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </form>
+    </table>
 </body>
 </html>
