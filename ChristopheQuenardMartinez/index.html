@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+</head>
+<body>
+    <p style="font-style: italic">Texto enfatizado</p>
+    <p style="font-weight: bold">Texto en negrita</p>
+    <dd style="font-style: italic">Texto definición</dd>
+    <p>Texto código fuente de ordenador <br>Texto ejemplo de código fuente de ordenador <br>Texto de teclado</p>
+    <p style="font-style: italic">Variable</p>
+    <p>En esta línea se muestra un <s>texto tachado</s> y se simula <u>una corrección</u>.</p>
+    <p><q>Esto es una cita</q> Cita</p>
+    <p><big>Este texto más grande</big> <small>y este texto más grande</small></p>
+    <p>En esta línea tenemos <sup>texto en superíndice</sup> y <sub>texto en subíndice</sub></p>
+    <p><pre>       El texto en una etiqueta 'pre' mantiene los espacios        y
+        saltos de línea</pre></p>
+    
+    <br><br><br><br>
+
+    <div style="background-color: yellow; width: 500px; height: 200px">
+        <header style="text-align: center; color: orange; font-size: 30px; font-weight: bold">Listas de enlaces</header>
+        <ul>
+            <li>Buscadores
+                <ul>
+                    <li><a href="https://www.bing.com/?setlang=es" style="color: purple">Bing</a></li>
+                    <li style="color: green">Google</li>
+                </ul>
+            </li>
+            <li>Redes sociales
+                    <ul>
+                        <li><a href="https://es-es.facebook.com/" style="color: red">Facebook</a></li>
+                        <li><a href="https://twitter.com/?lang=es" style="color: red">Twitter</a></li>
+                    </ul>
+                </li>
+        </ul>
+    </div>
+
+    <br><br><br><br>
+
+    <header style="font-weight: bold; font-size: 22px">Encabezado izquierda</header>
+    <div style="float: left;"><img src="amanecer.jpg"></div>
+    <div style="display: inline; font-size: 20px">
+        La música es, según la definición<br>
+        tradicional del término, el arte de<br>
+        organizar sensible y lógicamente una<br>
+        combinación coherente de sinidos y<br>
+        silencios utilizando los principios<br>
+        fundamentales de la melodía, la<br>
+        armonía y el ritmo, mediante la<br>
+        intervención de complejos procesos<br>
+        psico-anímicos.</div>
+    <div style="font-weight: bold; font-size: 16px;">Fig. 1 Descripción de la imagen</div>
+
+    <br><br><br><br>
+
+    <table>
+        <form action="gestiondatos.jsp" method="GET">
+            <tr>
+                <td>Asunto:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>* Primer apellido:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Segundo apellido:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>* Nombre:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>D.N.I. / Pasaporte / N.I.E:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>* Correo electrónico:</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Teléfono:</td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td>¿Sobre qué?:</td>
+                <td><input list="opciones">
+                    <datalist id="opciones">
+                        <option value="Opción 1"></option>
+                        <option value="Opción 2"></option>
+                        <option value="Opción 3"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>¿Qué va a escribir?:</td>
+                <td><input list="opciones">
+                    <datalist id="opciones">
+                        <option value="Opción 1"></option>
+                        <option value="Opción 2"></option>
+                        <option value="Opción 3"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>* Texto del escrito:</td>
+                <td><textarea name="texto" id="texto" cols="30" rows="10" required></textarea></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold" colspan="2">Los datos personales facilitados son susceptibles de cesión cuando ésta sea precisa para tramitar su contestación.</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </form>
+    </table>
+
+    <br><br><br><br>
+
+    <div style="width: 900px">
+        <div style="background-color: blue; text-align: center; color: white; font-size: 28px; width: 900px; height: 60px">TÍTULO DE LA PÁGINA</div>
+        <div style="background-color: green; text-align: center; color: white; font-size: 28px; width: 680px; height: 60px; border: 5px solid grey; float: left;">CAPA 1</div>
+        <div style="background-color: cornflowerblue; text-align: center; color: white; font-size: 28px; float: right; width: 200px; height: 130px; border: 5px solid grey;">Capa 5</div>
+        <div style="background-color: green; text-align: center; color: white; font-size: 28px; width: 680px; height: 60px; border: 5px solid grey; float: left;">CAPA 2</div>
+        <div style="background-color: cornflowerblue; text-align: center; color: white; font-size: 28px; float: right; width: 200px; height: 130px; border: 5px solid grey;">Capa 5</div>
+
+        <div style="background-color: green; text-align: center; color: white; font-size: 28px; width: 680px; height: 60px; border: 5px solid grey; float: left;">CAPA 3</div>
+        <div style="background-color: green; text-align: center; color: white; font-size: 28px; width: 680px; height: 60px; border: 5px solid grey; float: left;">CAPA 4</div>
+
+    </div>
+</body>
+</html>
