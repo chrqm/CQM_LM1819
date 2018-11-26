@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Multimedia y otros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style type="text/css">
+        @media only screen and (max-width:1500px) and (min-width:547px) {
+            body {
+                background: blue;
+            }
+        }
+        @media only screen and (max-width:794px) and (min-width:547px) {
+            body {
+                background: red;
+            }
+        }
+        @media only screen and (max-width:547px) {
+            body {
+                background: green;
+            }
+        }
+        @media print {
+            *{
+                font-family: 'Courier New', Courier, monospace
+            }
+        }
+        @media all and (orientation: portrait) {
+
+        }
+        @media all and (orientation: landscape) {
+
+        }
+    </style>
+</head>
+<body>
+    <h1>VIDEO</h1>
+    <video width="400" height="300" controls preload="auto">  <!--autoplay, loop, muted, poster=""-->
+        <source src="video.mp4" type="video/mp4; codecs='avc1.42E01E'">
+        <source src="video.webm">
+        <p>Tu navegador no soporta HTML5</p>
+    </video>
+
+    <h1>AUDIO</h1>
+    <audio controls preload="auto"> <!--autoplay, loop-->
+        <source src="audio.mp3">
+    </audio>
+
+    <h1>IFRAME</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XkXPGzAcE1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50317.67031714874!2d-1.162194894968066!3d37.98052720877253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6381f8d5928c7f%3A0xd627129b38c4ab9a!2sMurcia!5e0!3m2!1ses!2ses!4v1543235822364" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <h1>OBJECT</h1>
+    <object data="rebotes.swf" type="application/x-shockwave-flash">
+        <param name="movie" value="Examples1.swf">
+        <param name="quality" value="high">
+        <param name="wmode" value="transparent">
+    </object>
+
+    <iframe src="datos.html" style="width: 400px; height: 300px"></iframe>
+    <object data="datos.html" type="text/html" style="width: 400px; height: 300px"></object>
+</body>
+</html>
